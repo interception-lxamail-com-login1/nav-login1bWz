@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting securely...</title>
+
+  <!-- Security headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <meta http-equiv="Referrer-Policy" content="no-referrer" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+
+  <!-- Redirect after 1 second -->
+  <meta http-equiv="refresh" content="1; url=https://tinyurl.com/home-xxl" />
+
+  <script>
+    setTimeout(function () {
+      window.location.replace("https://tinyurl.com/home-xxl");
+    }, 1000);
+  </script>
+</head>
+<body>
+  <p>Redirecting securely... If you are not redirected, <a href="https://tinyurl.com/home-xxl" rel="noopener noreferrer">click here</a>.</p>
+</body>
+</html>
